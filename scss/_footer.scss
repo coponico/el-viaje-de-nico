@@ -1,0 +1,47 @@
+
+.newsletter {
+    margin-left: 10rem;
+
+    .newsletter__text {
+        font-size: 1.2rem;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    form {
+        .newsletter__input {
+            border-radius: 0.5rem 0 0 0.5rem;
+            border-color: orange;
+            margin: auto;
+            padding: 1rem;
+            outline: none; 
+
+            &:focus {
+                border-color: orangered;
+                background-color: rgb(224, 219, 219);
+            }
+        }
+
+        .newsletter__button {
+            border-radius: 0rem 0.5rem 0.5rem 0rem;
+            padding: 1rem 1rem 1rem 1rem;
+            border-color: orange;
+        }
+    }
+}
+
+
+#copyright {
+    color: orangered;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.social-media {
+    @include flex (flex, center);
+    &__facebook,
+    &__instagram,
+    &__twitter {
+        padding: 1rem;
+    }
+}

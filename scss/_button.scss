@@ -1,0 +1,27 @@
+.button {
+    display: flex;
+    position: absolute;
+    bottom: 18rem;
+    align-items: center;
+    z-index: 5;
+    justify-content: center;
+
+    .button__style {
+        color: rgba(211, 201, 201, 01);
+        box-sizing: border-box;
+        height: 5rem;
+        width: 10.7rem;
+        font-size: 2rem;
+        border: 1px solid;
+        border-radius: 4px;
+        text-decoration: none;
+        background-color: #222c2e;
+        transition: .5s;
+    }
+    .button__style:hover {
+        transition: .5s;
+        color: orangered;
+        background-color: #141a1b;
+        cursor: pointer;
+    }
+}

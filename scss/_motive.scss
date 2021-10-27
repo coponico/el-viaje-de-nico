@@ -1,0 +1,15 @@
+
+#motivation {
+    margin: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .motivation__img {
+        height: 30rem;
+        width: 30rem;
+    }
+    .motivation__text {
+        margin: 2rem;
+        line-height: 2.8rem; 
+    }
+}

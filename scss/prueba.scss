@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+@mixin flex($display, $justify-content)
+{
+    display: $display;
+    justify-content: $justify-content;
+}
+
+$font-size: 12;
+
+@while $font-size <= 18 {
+    .font-size-#{$font-size} {
+        font-size: ($font-size * 1px);
+    }
+
+    $font-size: $font-size + 2;
+}
+
+$colors: red, blue, pink;
+
+@each $color in $colors {
+  .text-#{$color} {
+
+    color: $color;
+  }
+}
+
+$media: (
+    instagram: pink,
+    facebook: blue,
+    twitter: lightblue,
+);
+@each $red, $color in $media {
+    .social-media__#{$red} {
+        color: $color;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    background: linear-gradient(180deg, hsla(236, 21%, 14%, 1) 0%, hsla(228, 29%, 3%, 1) 100%);
+}
+
+p {
+    font-size: 2rem;
+    color: rgb(161, 159, 159);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    color: #59656F;
+}
+
+.hr {
+    margin: 4rem;
+    border-color: orangered;
+    background-color: orangered;
+    height: 0.1rem;
+}
+
+
+/* General */
+
+@import "logo";
+
+@import "nav";
+
+@import "footer";
+
+@import "contact";
+
+
+
+/* Inicio */
+
+@import "slider";
+
+@import "button";
+
+@import "presentation";
+
+
+
+@import "categories";
+
+
+
+@import "bottomtext";
+
+
+
+/* Mi Ruta */
+
+@import "route";
+
+/* Videos */
+
+@import "popularvideo";
+
+@import "recommended-vid";
+
+@import "vidsearch";
+
+/* El Viaje */
+
+@import "about-trip";
+
+/* Merchandising */
+
+@import "merch";
+
+/* Quien soy */
+
+@import "who-am";
+
+@import "motive";

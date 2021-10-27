@@ -1,0 +1,15 @@
+#who-am {
+    margin: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .who-am__img {
+        height: 50rem;
+        width: 50rem
+    }
+
+    .who-am__text {
+        margin: 2rem;
+        line-height: 2.8rem
+    }
+}

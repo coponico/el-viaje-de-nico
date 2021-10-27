@@ -1,0 +1,16 @@
+#merch {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-items: center;
+
+    .merch__card {
+        margin-top: 3rem;
+
+        &__body {
+            &__btns {
+                display: grid;
+                row-gap: 0.5rem;
+            }
+        }
+    }
+}

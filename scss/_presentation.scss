@@ -1,0 +1,21 @@
+
+#presentation {
+    @include flex (flex, center);
+    flex-flow: row nowrap;
+    margin: 3rem;
+
+    .presentation__container {
+
+        #presentation__text,
+        #presentation_video {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid orangered;
+            height: 48rem;
+            width: 85.4rem;
+            margin: 0 5rem 0 5rem;
+            overflow: hidden;
+            text-align: center;
+            font-family: Oswald;
+        }
+    }
+}

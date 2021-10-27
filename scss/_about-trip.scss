@@ -1,0 +1,14 @@
+
+.trip-text {
+    margin: 5rem;
+    display: flex;
+    &__img {
+        height: 50rem;
+        width: 50rem;
+        margin-top: 2.5rem;
+    }
+    &__p {
+        margin: 2rem;
+        line-height: 2.4rem;
+    }
+}

@@ -1,0 +1,52 @@
+nav {
+    .nav-menu {
+        display: flex;
+        flex-flow: row-reverse wrap;
+        height: 2rem;
+        margin-right: 14rem;
+        list-style: none;
+
+        .nav-menu__item {
+
+            a {
+                color: rgb(211, 201, 201);
+                font-family: Oswald;
+                text-decoration: none;
+                padding: 1rem;
+                margin-right: 5rem;
+                font-size: 2rem;
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 0.3rem;
+                transition: 0.5s;
+
+                &:hover {
+                    color: orangered;
+                    text-decoration: none;
+                    padding: 1rem;
+                    font-size: 2rem;
+                    border-bottom: 1px solid orangered;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    nav {
+        display: flex;
+        justify-content: center;
+
+        .nav-menu {
+            display: flex;
+            flex-flow: row wrap;
+            height: 10rem;
+            justify-content: center;
+            list-style: none;
+            margin: auto;
+            &__item {
+                margin-top: 2rem;
+            }
+        }
+    }
+}

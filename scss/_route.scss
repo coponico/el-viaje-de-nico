@@ -1,0 +1,15 @@
+
+#route {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    color: rgb(211, 201, 201);
+
+    .route__h2 {
+        border-bottom: 1px solid orangered;
+    }
+
+    .route__iframe {
+        border-radius: 0.5rem;
+    }
+}

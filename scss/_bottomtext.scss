@@ -1,0 +1,10 @@
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    .bottom__text {
+        text-align: center;
+        width: 100rem;
+        margin: 3rem;
+    }
+}
