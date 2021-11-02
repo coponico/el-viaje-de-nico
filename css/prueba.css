@@ -605,3 +605,9 @@ nav .nav-menu {
   #motivation .motivation__text {
     margin: 2rem;
     line-height: 2.8rem; }
+
+/* Error 404 */
+.error {
+  display: flex;
+  justify-content: center;
+  flex-flow: row; }

@@ -1,3 +1,4 @@
 .error {
     @include flex (flex, center);
+    flex-flow: row;
 }
