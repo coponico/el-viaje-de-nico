@@ -31,7 +31,22 @@
         .carousel {
             &-inner {
                 .carousel-item {
-                    background-size: covergit;
+                    background-size: cover;
+                    &__img {
+                        height: 80vh;
+                        width: 100vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:411px) {
+    #slider {
+        .carousel {
+            &-inner {
+                .carousel-item {
                     &__img {
                         height: 80vh;
                         width: 100vh;

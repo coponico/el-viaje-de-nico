@@ -1,0 +1,18 @@
+{
+  "name": "2-entrega",
+  "version": "1.0.0",
+  "description": "Aplicada animación en el logo al hacer hover\r en lo posible, intenté hacer responsive el sitio pero no esta al 100%\r agregué muchos estilos y contenido a las demás secciones de las páginas\r Utilización de bootstrap\r Utilización de Grids y Flexbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/prueba.scss css/prueba.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13"
+  }
+}

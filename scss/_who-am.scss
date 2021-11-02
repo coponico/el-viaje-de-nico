@@ -1,10 +1,11 @@
 #who-am {
     margin: 5rem;
     display: flex;
-    flex-wrap: nowrap;
+
 
     .who-am__img {
         height: 50rem;
+        align-self: baseline;
         width: 50rem
     }
 

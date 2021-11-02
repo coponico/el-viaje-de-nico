@@ -8,6 +8,9 @@
 
         #presentation__text,
         #presentation_video {
+            @include flex (flex, center);
+            align-content: center;
+            flex-flow: row wrap;
             background-color: rgba(255, 255, 255, 0.1);
             border: 2px solid orangered;
             height: 48rem;
@@ -15,7 +18,43 @@
             margin: 0 5rem 0 5rem;
             overflow: hidden;
             text-align: center;
-            font-family: Oswald;
+            .presentation__text--zoom:hover {
+                color: orangered;
+                transition: .5s;
+                transform: scale(1.01);
+            }
         }
     }
 }
+
+@media only screen and (max-width:768px) {
+#presentation {
+    @include flex (flex, center);
+    flex-flow: column wrap;
+    
+    .presentation__container {
+        margin: 1rem;
+        #presentation__text,
+        #presentation_video {
+            width: 60rem;
+        }
+    }
+}
+}
+
+@media only screen and (max-width:425
+px) {
+    #presentation {
+        @include flex (flex, center);
+        flex-flow: column wrap;
+        
+        .presentation__container {
+            margin: 1rem 0 1rem 0;
+            #presentation__text,
+            #presentation_video {
+                width: 30rem;
+            }
+        }
+    }
+    }
+    

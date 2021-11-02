@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 .font-size-12 {
   font-size: 12px; }
 
@@ -22,13 +23,13 @@
   color: pink; }
 
 .social-media__instagram {
-  color: pink; }
+  color: white; }
 
 .social-media__facebook {
-  color: blue; }
+  color: white; }
 
 .social-media__twitter {
-  color: lightblue; }
+  color: white; }
 
 * {
   margin: 0;
@@ -44,8 +45,8 @@ body {
 
 p {
   font-size: 2rem;
-  color: #a19f9f;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  color: #f7f1f1;
+  font-family: 'Rubik', sans-serif; }
 
 h1 {
   color: #59656F; }
@@ -158,6 +159,22 @@ nav .nav-menu {
       border-bottom: 1px solid orangered;
       transition: 0.5s; }
 
+.breadcrumb {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  width: 125vh;
+  margin: 1rem; }
+  .breadcrumb-item {
+    color: white;
+    padding: 1rem 1rem 0 1rem;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem; }
+    .breadcrumb-item:visited, .breadcrumb-item:active {
+      color: inherit; }
+  .breadcrumb .active {
+    color: orangered; }
+
 @media only screen and (max-width: 768px) {
   nav {
     display: flex;
@@ -201,7 +218,22 @@ nav .nav-menu {
   display: flex;
   justify-content: center; }
   .social-media__facebook, .social-media__instagram, .social-media__twitter {
-    padding: 1rem; }
+    padding: 1rem;
+    transform: scale(3);
+    margin: 2rem;
+    text-decoration: none; }
+  .social-media__facebook:hover {
+    color: blue;
+    transform: scale(4);
+    transition: 0.4s; }
+  .social-media__instagram:hover {
+    color: pink;
+    transform: scale(4);
+    transition: 0.4s; }
+  .social-media__twitter:hover {
+    color: lightseagreen;
+    transform: scale(4);
+    transition: 0.4s; }
 
 .contact-btn {
   display: flex;
@@ -260,7 +292,7 @@ nav .nav-menu {
     #form input:focus,
     #form textarea:focus {
       padding: 2rem;
-      font-size: 2rem;
+      font-size: 1.1rem;
       outline: none;
       border-color: orangered;
       transition: .2s;
@@ -295,6 +327,11 @@ nav .nav-menu {
       height: 80vh;
       width: 100vh; } }
 
+@media only screen and (max-width: 411px) {
+  #slider .carousel-inner .carousel-item__img {
+    height: 80vh;
+    width: 100vh; } }
+
 .button {
   display: flex;
   position: absolute;
@@ -319,6 +356,24 @@ nav .nav-menu {
     background-color: #141a1b;
     cursor: pointer; }
 
+@media only screen and (max-width: 768px) {
+  .button {
+    display: flex;
+    position: absolute;
+    bottom: 5rem;
+    align-items: center;
+    z-index: 5;
+    justify-content: center; } }
+
+@media only screen and (max-width: 425 px) {
+  .button {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    align-items: center;
+    z-index: 5;
+    justify-content: center; } }
+
 #presentation {
   display: flex;
   justify-content: center;
@@ -326,14 +381,44 @@ nav .nav-menu {
   margin: 3rem; }
   #presentation .presentation__container #presentation__text,
   #presentation .presentation__container #presentation_video {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid orangered;
     height: 48rem;
     width: 85.4rem;
     margin: 0 5rem 0 5rem;
     overflow: hidden;
-    text-align: center;
-    font-family: Oswald; }
+    text-align: center; }
+    #presentation .presentation__container #presentation__text .presentation__text--zoom:hover,
+    #presentation .presentation__container #presentation_video .presentation__text--zoom:hover {
+      color: orangered;
+      transition: .5s;
+      transform: scale(1.01); }
+
+@media only screen and (max-width: 768px) {
+  #presentation {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap; }
+    #presentation .presentation__container {
+      margin: 1rem; }
+      #presentation .presentation__container #presentation__text,
+      #presentation .presentation__container #presentation_video {
+        width: 60rem; } }
+
+@media only screen and (max-width: 425 px) {
+  #presentation {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap; }
+    #presentation .presentation__container {
+      margin: 1rem 0 1rem 0; }
+      #presentation .presentation__container #presentation__text,
+      #presentation .presentation__container #presentation_video {
+        width: 30rem; } }
 
 #categories {
   display: grid;
@@ -368,6 +453,28 @@ nav .nav-menu {
       opacity: 1;
       color: #DAF7A6; }
 
+@media only screen and (max-width: 768px) {
+  #categories {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-content: space-between; }
+    #categories .categories__content {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem 0 3rem 0; } }
+
+@media only screen and (max-width: 425px) {
+  #categories {
+    display: grid;
+    grid-template-columns: repeat(1, 87vh);
+    align-content: center; }
+    #categories .categories__content {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+
 .bottom {
   display: flex;
   justify-content: center; }
@@ -391,6 +498,16 @@ nav .nav-menu {
 #popular-video {
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap; }
+
+#popular-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap; }
 
 #more-vid {
@@ -431,6 +548,18 @@ nav .nav-menu {
       cursor: pointer;
       font-size: 20px; }
 
+@media only screen and (max-width: 768px) {
+  .wrap {
+    width: 50%;
+    margin-left: 20rem;
+    margin-top: 10rem; } }
+
+@media only screen and (max-width: 411px) {
+  .wrap {
+    width: 50%;
+    margin-left: 10rem;
+    margin-top: 10rem; } }
+
 /* El Viaje */
 .trip-text {
   margin: 5rem;
@@ -457,10 +586,10 @@ nav .nav-menu {
 /* Quien soy */
 #who-am {
   margin: 5rem;
-  display: flex;
-  flex-wrap: nowrap; }
+  display: flex; }
   #who-am .who-am__img {
     height: 50rem;
+    align-self: baseline;
     width: 50rem; }
   #who-am .who-am__text {
     margin: 2rem;

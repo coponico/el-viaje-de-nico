@@ -35,3 +35,20 @@
         }
     }
 }
+
+@media only screen and (max-width:768px) {
+    .wrap {
+        width: 50%;
+        margin-left: 20rem;
+        margin-top: 10rem;
+        }
+}
+
+
+@media only screen and (max-width:411px) {
+    .wrap {
+        width: 50%;
+        margin-left: 10rem;
+        margin-top: 10rem;
+        }
+}

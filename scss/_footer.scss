@@ -43,5 +43,23 @@
     &__instagram,
     &__twitter {
         padding: 1rem;
+        transform: scale(3);
+        margin: 2rem;
+    text-decoration: none;
+    }
+    &__facebook:hover {
+        color: blue;
+        transform: scale(4);
+        transition: 0.4s;
+    }
+    &__instagram:hover {
+        color: pink;
+        transform: scale(4);
+        transition: 0.4s;
+    }
+    &__twitter:hover {
+        color: lightseagreen;
+        transform: scale(4);
+        transition: 0.4s;
     }
 }

@@ -1,37 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
-@mixin flex($display, $justify-content)
-{
+@mixin flex($display, $justify-content) {
     display: $display;
     justify-content: $justify-content;
 }
 
 $font-size: 12;
 
-@while $font-size <= 18 {
+@while $font-size <=18 {
     .font-size-#{$font-size} {
         font-size: ($font-size * 1px);
     }
 
-    $font-size: $font-size + 2;
+    $font-size: $font-size+2;
 }
 
-$colors: red, blue, pink;
+$colors: red,
+blue,
+pink;
 
 @each $color in $colors {
-  .text-#{$color} {
+    .text-#{$color} {
 
-    color: $color;
-  }
+        color: $color;
+    }
 }
 
-$media: (
-    instagram: pink,
-    facebook: blue,
-    twitter: lightblue,
+$media: (instagram: white,
+    facebook: white,
+    twitter: white,
 );
-@each $red, $color in $media {
+
+@each $red,
+$color in $media {
     .social-media__#{$red} {
         color: $color;
     }
@@ -56,8 +59,8 @@ body {
 
 p {
     font-size: 2rem;
-    color: rgb(161, 159, 159);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(247, 241, 241);
+    font-family: 'Rubik', sans-serif;
 }
 
 h1 {
