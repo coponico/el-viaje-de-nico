@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi ruta</title>
+    <meta name="description" content="Mediante un mapa podrás seguir todo mi recorrido casi a tiempo real." />
+    <meta name="keywords" content="viaje, mundo, moto, paises, cultura, rutas">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <!--AWESOME FONT-->
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/prueba.css">
+
+    <!-- ANIMATE.STYLE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <div id="logo">
+                <h1 class="logo__text">El Viaje de Nico</h1>
+                <img class="logo__img" src="../media/logo.png" alt="logotipo">
+        </a>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-menu__item"><a href="aboutme.html">Sobre mi</a></li>
+                <li class="nav-menu__item"><a href="merchandising.html">Merchandising</a></li>
+                <li class="nav-menu__item"><a href="thetrip.html">El Viaje</a></li>
+                <li class="nav-menu__item"><a href="myroute.html">Mi Ruta</a></li>
+                <li class="nav-menu__item"><a href="videos.html">Vídeos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr class="hr">
+    <section id="route">
+        <h2 class="route__h2 animate__animated animate__backInDown">LA RUTA</h2>
+        <h4 class="route__h4 animate__animated animate__bounceIn">Persigue mi recorrido</h4>
+        <iframe class="route__iframe"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53870507.47265535!2d2.0846195817382895!3d34.503015068687034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1633972883145!5m2!1ses!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <hr class="hr">
+    <div class="contact-grid contact-btn">
+        <button type="button" class="btn btn-primary contact-btn__button" data-bs-toggle="modal"
+            data-bs-target="#exampleModal"><img class="contact-btn__img" src="../media/contact.png" alt="telephone">
+        </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> Formulario de contacto</h5> <button
+                        type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section id="form" class="container">
+                        <h1 class="form__h1">CONTACTO</h1> <label for="name">Nombre:</label> <input type="text"
+                            name="name" placeholder="Tu nombre. ej: Nicolás"> <label
+                            for="lastname">Apellido:</label> <input type="text" name="lastname"
+                            placeholder="Tu apellido. ej: Joli"> <br> <br> <label for="email">Correo:</label> <input
+                            type="email" name="email" placeholder="Email. ej: nicolas@gmail.com"> <label
+                            for="cel">Celular:</label> <input type="number" name="cel"
+                            placeholder="Celular. ej: 11 2233-4455"> <br> <br> <label for="message">Mensaje:</label>
+                        <br> <textarea name="message" cols="30" rows="10"
+                            placeholder="Ej: Hola Nico, se que pronto pasaras por mi ciudad y quería contarte sobre ella..."></textarea>
+                        <div class="form__flex-checkbox"> <input type="checkbox" name="accept"> <label
+                                class="form__terms" for="accept">Prometo no estar enviando spam</label> </div>
+                        <input type="reset" value="Limpiar"> <input type="submit" value="Enviar">
+                    </section>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Salir</button> </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="newsletter">
+            <h3 class="newsletter__text">suscribete a nuestro Newsletter</h3>
+            <form> <input class="newsletter__input" type="email" placeholder="Email" required> <button
+                    class="newsletter__button" type="submit">📩</button> </form>
+        </div>
+        <div class="social-media">
+            <a href ="www.instagram.com" <i class="social-media__instagram lni lni-instagram-original"></i></a>
+            <a href ="https://www.facebook.com" <i class="social-media__facebook lni lni-facebook-original"></i></a>
+
+            <a href ="https://www.twitter.com" <i class="social-media__twitter lni lni-twitter-original"></i></a>
+
+        </div>
+        <p id="copyright">© 2021 Nicolas Joli. Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"
+        integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
