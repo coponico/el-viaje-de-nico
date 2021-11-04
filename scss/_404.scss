@@ -1,4 +1,13 @@
 .error {
-    @include flex (flex, center);
-    flex-flow: row;
+    display: grid;
+    grid-template-rows: repeat(1, 100%);
+    justify-content: center;
+    margin: 15rem;
+
+    .error__text {
+        text-align: center;
+    }
+    #countDown {
+        color: orangered;
+    }
 }

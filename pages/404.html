@@ -8,14 +8,52 @@
     <link rel="stylesheet" href="../css/prueba.css">
     <meta name=»robots» content=»noindex»>
 </head>
-<body class="error">
+<body>
+    <header>
+        <a href="../index.html">
+            <div id="logo">
+                <h1 class="logo__text">El Viaje de Nico</h1>
+                <img class="logo__img" src="../media/logo.png" alt="logotipo">
+        </a>
+        </div>
+    <div class="error">
     <img class="error__img" src="../media/404.png" alt="ERROR 404">
-    <p>Serás redirigido en 3 segundos.</p>
+    <p class="error__text">Serás redirigido en</p>
+ <p class="error__text" id="countDown">3</p>
+    <p class="error__text">segundos.</p>
+</div>
+<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+<script>
+$(function () {
+    var messages = [],
+        index = 0;
+
+    messages.push('3');
+    messages.push('2');
+    messages.push('1');
+    messages.push('0');
+
+    function cycle() {
+        $('#countDown').html(messages[index]);
+        index++;
+
+        if (index === messages.length) {
+            index = 0;
+        }
+
+        setTimeout(cycle, 1000);
+    }
+
+    cycle();
+});
+</script>
+<div id="some-id"></div>
 
     <script>
         var timer = setTimeout(function() {
-            window.location='index.html'
+            window.location='../index.html'
         }, 3000);
     </script>
+
 </body>
 </html>
