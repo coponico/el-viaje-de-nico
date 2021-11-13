@@ -6,6 +6,7 @@
     margin-top: 3rem;
 
     .carousel {
+        z-index: 0;
         .ctrl-pad {
             .control {
                 background-color: black;
@@ -42,14 +43,16 @@
     }
 }
 
-@media only screen and (max-width:411px) {
+@media only screen and (max-width:414px) {
     #slider {
         .carousel {
             &-inner {
                 .carousel-item {
                     &__img {
-                        height: 80vh;
-                        width: 100vh;
+                        height: 180px;
+                        object-fit: cover;
+                        width: 100%;
+                        object-position: right center;
                     }
                 }
             }

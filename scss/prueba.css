@@ -565,7 +565,7 @@ nav .nav-menu .nav-menu__item a:hover {
   }
 }
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 414px) {
   #slider .carousel-inner .carousel-item__img {
     height: 80vh;
     width: 100vh;
@@ -956,7 +956,7 @@ nav .nav-menu .nav-menu__item a:hover {
   }
 }
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 414px) {
   .wrap {
     width: 50%;
     margin-left: 10rem;

@@ -20,6 +20,10 @@
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/prueba.css">
 
+            <!--WICKED CSS-->
+            <link rel="stylesheet" href="css/wickedcss.min.css">
+
+
 </head>
 
 <body>
@@ -39,6 +43,17 @@
                 <li class="nav-menu__item"><a href="videos.html">Vídeos</a></li>
             </ul>
         </nav>
+        <nav class="nav-menu-hamburger">
+            <input type="checkbox" id="menu">
+            <label for="menu"> ☰ </label>
+                <ul class="nav-menu-hamburger__ul slideDown">
+                    <li class="nav-menu-hamburger__ul__item"><a class="nav-menu-hamburger__ul__link" href="aboutme.html">Sobre mi</a></li>
+                    <li class="nav-menu-hamburger__ul__item"><a class="nav-menu-hamburger__ul__link" href="merchandising.html">Merchandising</a></li>
+                    <li class="nav-menu-hamburger__ul__item"><a class="nav-menu-hamburger__ul__link" href="thetrip.html">El Viaje</a></li>
+                    <li class="nav-menu-hamburger__ul__item"><a class="nav-menu-hamburger__ul__link" href="myroute.html">Mi Ruta</a></li>
+                    <li class="nav-menu-hamburger__ul__item"><a class="nav-menu-hamburger__ul__link" href="videos.html">Vídeos</a></li>
+                </ul>
+            </nav>
     </header>
 
     <hr class="hr">
@@ -71,6 +86,7 @@
     </section>
     <hr class="hr">
     <section id="motivation">
+        <img class="motivation__img" src="../media/mapamundi.jpg" alt="Mapamundi">
         <p class="motivation__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore id rem ad? Odio
             sapiente vero ea aut, at
             nulla nihil aliquid delectus magnam quisquam voluptatem, ex id culpa est soluta! Nostrum esse possimus
@@ -82,7 +98,6 @@
             reiciendis repellat labore laudantium fugiat magni recusandae enim ex, corrupti perferendis autem
             voluptatum, praesentium placeat quos laborum amet architecto maxime suscipit! Quaerat perspiciatis neque
             autem rerum corrupti?</p>
-        <img class="motivation__img" src="../media/mapamundi.jpg" alt="Mapamundi">
     </section>
     <div class="contact-grid contact-btn">
         <button type="button" class="btn btn-primary contact-btn__button" data-bs-toggle="modal"

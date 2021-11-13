@@ -42,9 +42,9 @@
 }
 }
 
-@media only screen and (max-width:425
-px) {
+@media only screen and (max-width:425px) {
     #presentation {
+        margin: 0;
         @include flex (flex, center);
         flex-flow: column wrap;
         
@@ -52,7 +52,13 @@ px) {
             margin: 1rem 0 1rem 0;
             #presentation__text,
             #presentation_video {
-                width: 30rem;
+                width: 29rem;
+                overflow: scroll;
+                .presentation__text--zoom:hover {
+                    color: orangered;
+                    transition: .5s;
+                    transform: scale(1.0);
+                }
             }
         }
     }

@@ -1,15 +1,71 @@
 
 #motivation {
     margin: 5rem;
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "texto imagen";
+
 
     .motivation__img {
-        height: 30rem;
-        width: 30rem;
+        grid-area: imagen;
+        margin-left: 10rem;
+        height: 50rem;
+        width: 50rem;
     }
     .motivation__text {
+        grid-area: texto;
         margin: 2rem;
         line-height: 2.8rem; 
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #motivation {
+        margin: 0;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 82vh;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+    
+    
+        .motivation__img {
+            grid-area: imagen;
+            margin: 0 0 0 0;
+            height: 50rem;
+            width: 50rem;
+        }
+        .motivation__text {
+            grid-area: texto;
+            margin: 2rem;
+            line-height: 2.8rem; 
+        }
+    }
+}
+
+@media only screen and (max-width:414px) {
+    #motivation {
+        margin: 0;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 50vh;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+    
+    
+        .motivation__img {
+            grid-area: imagen;
+            margin: 0;
+            height: 30rem;
+            width: 30rem;
+        }
+        .motivation__text {
+            grid-area: texto;
+            margin: 2rem;
+            font-size: 1.5rem;
+            line-height: 2.8rem; 
+        }
     }
 }

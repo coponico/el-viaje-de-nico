@@ -1,16 +1,109 @@
 #who-am {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:   2fr;
+    grid-template-areas: 
+    "imagen texto"
+    "imagen texto";
     margin: 5rem;
-    display: flex;
+
 
 
     .who-am__img {
         height: 50rem;
+        margin: 2rem;
         align-self: baseline;
-        width: 50rem
+        width: 50rem;
+        grid-area: imagen;
     }
 
     .who-am__text {
-        margin: 2rem;
-        line-height: 2.8rem
+        line-height: 2.8rem;
+        grid-area: texto;
     }
 }
+
+@media only screen and (max-width:414px) {
+    #who-am {
+        display: grid;
+        grid-template-columns: 50vh;
+        justify-items: center;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        margin: 0;
+    
+    
+    
+        .who-am__img {
+            height: 30rem;
+            margin: 1rem;
+            align-self: baseline;
+            width: 30rem;
+            grid-area: imagen;
+        }
+    
+        .who-am__text {
+            line-height: 3rem;
+            font-size: 1.5rem;
+            grid-area: texto;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #who-am {
+        display: grid;
+        grid-template-columns: 82vh;
+        justify-items: center;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        margin: 0;
+    
+    
+    
+        .who-am__img {
+            height: 30rem;
+            margin: 1rem;
+            align-self: baseline;
+            width: 30rem;
+            grid-area: imagen;
+        }
+    
+        .who-am__text {
+            line-height: 3rem;
+            font-size: 2rem;
+            margin: 2rem;
+            grid-area: texto;
+        }
+    }
+}
+    
+    
+    @media only screen and (max-width:414px) {
+        #who-am {
+            display: grid;
+            grid-template-columns: 50vh;
+            justify-items: center;
+            grid-template-areas: 
+            "imagen"
+            "texto";
+            margin: 0;
+        
+        
+        
+            .who-am__img {
+                height: 30rem;
+                margin: 1rem;
+                width: 30rem;
+                grid-area: imagen;
+            }
+        
+            .who-am__text {
+                line-height: 3rem;
+                font-size: 1.5rem;
+                grid-area: texto;
+            }
+        }
+    }

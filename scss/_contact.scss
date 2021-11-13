@@ -84,10 +84,15 @@
         }
     }
     .form__flex-checkbox {
-        display: flex;
+        display: grid;
+        grid-template-columns: 50px 100px;
+        grid-template-rows: 1fr;
         margin: 1rem;
-        flex-flow: nowrap;
-        align-items: baseline;
-        justify-content: center;
+        & .form__terms {
+            grid-column: 1;
+        }
+        & input {
+            grid-column: 2;
+        }
     }
 }

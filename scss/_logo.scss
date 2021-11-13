@@ -111,21 +111,55 @@
 }
 
 @media only screen and (max-width:768px) {
-
     #logo {
-        display: flex;
-        justify-content: center;
-        margin: 20px;
+        margin-left: 25px;
+        height: 9rem;
+        width: 15rem;
+    
         .logo__img {
             height: 5rem;
-            top: 2.9rem;
-            left: 3rem;
+            top: 1.5rem;
+            left: 32rem;
             position: relative;
+    
         }
+    
+        &:hover .logo__img {
+            animation-name: none;
+        }
+    
         .logo__text {
             position: absolute;
-            top: 1rem;
+            top: 6.5rem;
+            left: 30rem;
             color: #B08EA2;
         }
     }
+
+@media only screen and (max-width:414px) {
+    #logo {
+        margin-left: 25px;
+        height: 9rem;
+        width: 15rem;
+    
+        .logo__img {
+            height: 5rem;
+            top: 1.5rem;
+            left: 12rem;
+            position: relative;
+    
+        }
+    
+        &:hover .logo__img {
+            animation-name: none;
+        }
+    
+        .logo__text {
+            position: absolute;
+            left: 12rem;
+            top: 6.5rem;
+            color: #B08EA2;
+        }
+    }
+}
 }

@@ -5,6 +5,7 @@
 
     .merch__card {
         margin-top: 3rem;
+        background-color: black;
 
         &__body {
             &__btns {
@@ -13,4 +14,24 @@
             }
         }
     }
+}
+
+@media only screen and (max-width:425px) {
+    #merch {
+        display: grid;
+        grid-template-columns: repeat(1, 50vh);
+        justify-items: center;
+    
+        .merch__card {
+            margin-top: 3rem;
+    
+            &__body {
+                &__btns {
+                    display: grid;
+                    row-gap: 0.5rem;
+                }
+            }
+        }
+    }
+
 }

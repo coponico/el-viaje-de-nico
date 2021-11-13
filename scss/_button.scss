@@ -31,20 +31,19 @@
     .button {
         display: flex;
         position: absolute;
-        bottom: 5rem;
+        top: 80rem;
         align-items: center;
         z-index: 5;
         justify-content: center;
     }
 }
 
-@media only screen and (max-width:425
-px) {
+@media only screen and (max-width:425px) {
 
     .button {
         display: flex;
         position: absolute;
-        bottom: 1rem;
+        top: 60rem;
         align-items: center;
         z-index: 5;
         justify-content: center;
