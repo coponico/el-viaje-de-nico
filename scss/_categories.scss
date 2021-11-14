@@ -45,46 +45,47 @@
 
 
 
-
-@media only screen and (min-width: 320px) and (max-width: 375px) {
+@media only screen and (max-width:768px) {
+    
     #categories {
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr 1fr;
+        align-content: space-between;
+        
+        .categories__content {
+            margin: 2rem 0rem 5rem 0rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+}
+
+
+@media only screen and (max-width:480px) {
+    #categories {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+        
+        
+        .categories__content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+@media only screen and (max-width: 375px) {
+    #categories {
+        display: grid;
+        grid-template-columns: 1fr;
         max-width: 100%;
         align-content: center;
 
 
         
-        .categories__content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-}
-
-@media only screen and (min-width:461px) and (max-width:480px) {
-    #categories {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-content: center;
-
-        
-        .categories__content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-}
-@media only screen and (min-width:481) and (max-width:768px) {
-
-    #categories {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-content: space-between;
-
-
         .categories__content {
             display: flex;
             justify-content: center;
