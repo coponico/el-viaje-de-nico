@@ -486,7 +486,7 @@ nav .nav-menu {
     width: 50%;
     display: flex;
     position: absolute;
-    z-index: 5; }
+    z-index: 4; }
     #slider .slider__text__bg .slider__text {
       text-align: center;
       font-size: 4rem;
@@ -519,8 +519,7 @@ nav .nav-menu {
     background-color: rgba(0, 0, 0, 0.5);
     width: 80%;
     height: 10%;
-    position: absolute;
-    z-index: 4; }
+    position: absolute; }
     #slider .slider__text__bg .slider__text {
       text-align: center;
       font-size: 3rem;
@@ -572,6 +571,41 @@ nav .nav-menu {
       position: absolute;
       top: 2.2rem;
       right: 3rem;
+      justify-self: center;
+      display: block;
+      animation: slideranimation 1.2s infinite;
+      color: orangered;
+      font-size: 3rem; }
+  #slider .carousel .ctrl-pad {
+    display: none; }
+  #slider .carousel-inner .carousel-item__img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+    object-position: right center; } }
+
+@media only screen and (max-width: 360px) {
+  #slider .slider__text__bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    height: 10%;
+    position: absolute; }
+    #slider .slider__text__bg .slider__text {
+      text-align: center;
+      font-size: 3rem;
+      font-family: 'Oswald', sans-serif;
+      background-image: linear-gradient(180deg, #ffffff, #d9d9d9);
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent; }
+    #slider .slider__text__bg .slider__text-animation {
+      grid-column: 2;
+      grid-row: 0/2;
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
       justify-self: center;
       display: block;
       animation: slideranimation 1.2s infinite;
@@ -679,24 +713,22 @@ nav .nav-menu {
     display: flex;
     justify-content: center;
     flex-flow: column wrap; }
-    #presentation .presentation__container {
-      margin: 1rem 0 1rem 0; }
-      #presentation .presentation__container #presentation__text,
-      #presentation .presentation__container #presentation_video {
-        width: 29rem;
-        overflow: scroll; }
-        #presentation .presentation__container #presentation__text .presentation__text--zoom:hover,
-        #presentation .presentation__container #presentation_video .presentation__text--zoom:hover {
-          color: orangered;
-          transition: .5s;
-          transform: scale(1); } }
+    #presentation .presentation__container #presentation__text,
+    #presentation .presentation__container #presentation_video {
+      width: 29rem;
+      overflow: scroll; }
+      #presentation .presentation__container #presentation__text .presentation__text--zoom:hover,
+      #presentation .presentation__container #presentation_video .presentation__text--zoom:hover {
+        color: orangered;
+        transition: .5s;
+        transform: scale(1); } }
 
 #categories {
   display: grid;
   grid-template-columns: repeat(3, 33%);
   align-content: space-between; }
   #categories .categories__content {
-    margin: 2rem 15rem 5rem 20rem;
+    margin: 2rem 0rem 5rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -730,11 +762,9 @@ nav .nav-menu {
     grid-template-columns: repeat(2, 50%);
     align-content: space-between; }
     #categories .categories__content {
-      margin: auto;
       display: flex;
       justify-content: center;
-      align-items: center;
-      margin: 3rem 0 3rem 0; } }
+      align-items: center; } }
 
 @media only screen and (max-width: 480px) {
   #categories {
@@ -742,6 +772,17 @@ nav .nav-menu {
     grid-template-columns: repeat(1, 38rem);
     align-content: center; }
     #categories .categories__content {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+
+@media only screen and (max-width: 360px) {
+  #categories {
+    display: grid;
+    grid-template-columns: repeat(1, 38rem);
+    align-content: center; }
+    #categories .categories__content {
+      box-sizing: border-box;
       display: flex;
       justify-content: center;
       align-items: center; } }

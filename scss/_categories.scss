@@ -5,7 +5,7 @@
     align-content: space-between;
 
     .categories__content {
-        margin: 2rem 15rem 5rem 20rem;
+        margin: 2rem 0rem 5rem 0rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -51,11 +51,9 @@
         align-content: space-between;
 
         .categories__content {
-            margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 3rem 0 3rem 0;
         }
     }
 }
@@ -69,6 +67,21 @@
 
         .categories__content {
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #categories {
+        display: grid;
+        grid-template-columns: repeat(1, 38rem);
+        align-content: center;
+
+        .categories__content {
+            box-sizing: border-box;
             display: flex;
             justify-content: center;
             align-items: center;

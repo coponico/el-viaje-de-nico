@@ -75,7 +75,7 @@
             width: 50%;
             display: flex;
             position: absolute;
-            z-index: 5;
+            z-index: 4;
 
             .slider__text {
                 text-align: center;
@@ -124,7 +124,6 @@
             width: 80%;
             height: 10%;
             position: absolute;
-            z-index: 4;
 
             .slider__text {
                 text-align: center;
@@ -221,6 +220,59 @@
         }
     }
 }
+
+@media only screen and (max-width:360px) {
+    #slider {
+        .slider__text__bg {
+            background-color: rgba(#000000, .5);
+            width: 80%;
+            height: 10%;
+            position: absolute;
+
+            .slider__text {
+                text-align: center;
+                font-size: 3rem;
+                font-family: 'Oswald', sans-serif;
+                background-image: linear-gradient(180deg, #ffffff, #d9d9d9);
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;
+            }
+            .slider__text-animation {
+                grid-column: 2;
+                grid-row: 0/2;
+                position: absolute;
+                top: 1.5rem;
+                right: 2rem;
+                justify-self: center;
+                display: block;
+                animation: slideranimation 1.2s infinite;
+                color: orangered;
+                font-size: 3rem;
+            }
+        }
+
+        .carousel {
+            .ctrl-pad {
+                display: none;
+            }
+
+            &-inner {
+                .carousel-item {
+                    &__img {
+                        height: 180px;
+                        object-fit: cover;
+                        width: 100%;
+                        object-position: right center;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @keyframes slideranimation {
     0% {
