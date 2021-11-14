@@ -630,6 +630,62 @@ nav .nav-menu {
     width: 100%;
     object-position: right center; } }
 
+@media only screen and (max-width: 1280px) {
+  #slider .slider__text__bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 30%;
+    height: 14%;
+    position: absolute; }
+    #slider .slider__text__bg .slider__text {
+      text-align: center;
+      font-size: 3rem; }
+    #slider .slider__text__bg .slider__text-animation {
+      grid-column: 2;
+      grid-row: 0/2;
+      position: absolute;
+      top: 2.9rem;
+      right: 5.8rem;
+      justify-self: center;
+      display: block;
+      animation: slideranimation 1.2s infinite;
+      color: orangered;
+      font-size: 3rem; }
+  #slider .carousel .ctrl-pad {
+    display: none; }
+  #slider .carousel-inner .carousel-item__img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+    object-position: right center; } }
+
+@media only screen and (max-width: 1024px) {
+  #slider .slider__text__bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 30%;
+    height: 14%;
+    position: absolute; }
+    #slider .slider__text__bg .slider__text {
+      text-align: center;
+      font-size: 3rem; }
+    #slider .slider__text__bg .slider__text-animation {
+      grid-column: 2;
+      grid-row: 0/2;
+      position: absolute;
+      top: 2.9rem;
+      right: 2rem;
+      justify-self: center;
+      display: block;
+      animation: slideranimation 1.2s infinite;
+      color: orangered;
+      font-size: 3rem; }
+  #slider .carousel .ctrl-pad {
+    display: none; }
+  #slider .carousel-inner .carousel-item__img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+    object-position: right center; } }
+
 @keyframes slideranimation {
   0% {
     opacity: 1; }
