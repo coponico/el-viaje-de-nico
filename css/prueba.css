@@ -138,7 +138,7 @@ h1 {
       left: 30rem;
       color: #B08EA2; } }
 
-@media only screen and (max-width: 768px) and (max-width: 414px) {
+@media only screen and (max-width: 768px) and (max-width: 480px) {
   #logo {
     margin-left: 25px;
     height: 9rem;
@@ -153,6 +153,24 @@ h1 {
     #logo .logo__text {
       position: absolute;
       left: 12rem;
+      top: 6.5rem;
+      color: #B08EA2; } }
+
+@media only screen and (max-width: 375px) {
+  #logo {
+    margin-left: 25px;
+    height: 9rem;
+    width: 15rem; }
+    #logo .logo__img {
+      height: 5rem;
+      top: 1.5rem;
+      left: 14rem;
+      position: relative; }
+    #logo:hover .logo__img {
+      animation-name: none; }
+    #logo .logo__text {
+      position: absolute;
+      left: 14rem;
       top: 6.5rem;
       color: #B08EA2; } }
 
@@ -238,7 +256,7 @@ nav .nav-menu {
           text-decoration: none;
           transition: ease-in .3s; } }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 480px) {
   nav .nav-menu {
     display: none; }
   .nav-menu-hamburger {
@@ -496,13 +514,13 @@ nav .nav-menu {
       height: 80vh;
       width: 100vh; } }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 480px) {
   #slider .slider__text__bg {
     background-color: rgba(0, 0, 0, 0.5);
     width: 80%;
     height: 10%;
     position: absolute;
-    z-index: 5; }
+    z-index: 4; }
     #slider .slider__text__bg .slider__text {
       text-align: center;
       font-size: 3rem;
@@ -519,6 +537,41 @@ nav .nav-menu {
       position: absolute;
       top: 1.5rem;
       right: 4rem;
+      justify-self: center;
+      display: block;
+      animation: slideranimation 1.2s infinite;
+      color: orangered;
+      font-size: 3rem; }
+  #slider .carousel .ctrl-pad {
+    display: none; }
+  #slider .carousel-inner .carousel-item__img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+    object-position: right center; } }
+
+@media only screen and (max-width: 375px) {
+  #slider .slider__text__bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    height: 10%;
+    position: absolute; }
+    #slider .slider__text__bg .slider__text {
+      text-align: center;
+      font-size: 3rem;
+      font-family: 'Oswald', sans-serif;
+      background-image: linear-gradient(180deg, #ffffff, #d9d9d9);
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent; }
+    #slider .slider__text__bg .slider__text-animation {
+      grid-column: 2;
+      grid-row: 0/2;
+      position: absolute;
+      top: 2.2rem;
+      right: 3rem;
       justify-self: center;
       display: block;
       animation: slideranimation 1.2s infinite;
@@ -683,10 +736,10 @@ nav .nav-menu {
       align-items: center;
       margin: 3rem 0 3rem 0; } }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 480px) {
   #categories {
     display: grid;
-    grid-template-columns: repeat(1, 50vh);
+    grid-template-columns: repeat(1, 38rem);
     align-content: center; }
     #categories .categories__content {
       display: flex;
@@ -701,6 +754,11 @@ nav .nav-menu {
     width: 100rem;
     margin: 3rem; }
 
+@media only screen and (max-width: 480px) {
+  .bottom .bottom__text {
+    width: 100%;
+    margin: 3rem; } }
+
 /* Mi Ruta */
 #route {
   display: flex;
@@ -712,7 +770,7 @@ nav .nav-menu {
   #route .route__iframe {
     border-radius: 0.5rem; }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 480px) {
   #route {
     display: flex;
     align-items: center;
@@ -784,7 +842,7 @@ nav .nav-menu {
     margin-left: 20rem;
     margin-top: 10rem; } }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 480px) {
   .wrap {
     width: 50%;
     margin-left: 10rem;
@@ -803,7 +861,7 @@ nav .nav-menu {
     margin: 2rem;
     line-height: 2.4rem; }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 480px) {
   .trip-text {
     margin: 0rem;
     grid-template-columns: 50vh;
@@ -857,7 +915,7 @@ nav .nav-menu {
     line-height: 2.8rem;
     grid-area: texto; }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 480px) {
   #who-am {
     display: grid;
     grid-template-columns: 50vh;
@@ -894,7 +952,7 @@ nav .nav-menu {
       margin: 2rem;
       grid-area: texto; } }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 480px) {
   #who-am {
     display: grid;
     grid-template-columns: 50vh;
@@ -943,7 +1001,7 @@ nav .nav-menu {
       margin: 2rem;
       line-height: 2.8rem; } }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 480px) {
   #motivation {
     margin: 0;
     display: grid;

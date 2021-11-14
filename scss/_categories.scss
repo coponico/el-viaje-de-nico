@@ -61,10 +61,10 @@
 }
 
 
-@media only screen and (max-width:414px) {
+@media only screen and (max-width:480px) {
     #categories {
         display: grid;
-        grid-template-columns: repeat(1, 50vh);
+        grid-template-columns: repeat(1, 38rem);
         align-content: center;
 
         .categories__content {
