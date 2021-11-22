@@ -338,7 +338,7 @@ nav .nav-menu {
       background-color: #e0dbdb; }
   .newsletter form .newsletter__button {
     border-radius: 0rem 0.5rem 0.5rem 0rem;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 0.8rem 1rem 1rem 1rem;
     border-color: orange; }
 
 #copyright {
@@ -455,7 +455,7 @@ nav .nav-menu {
     grid-template-rows: 10rem;
     align-items: center;
     width: 25%;
-    z-index: 5; }
+    z-index: 4; }
     #slider .slider__text__bg .slider__text {
       grid-column: 1;
       display: block;
@@ -618,8 +618,8 @@ nav .nav-menu {
 @media only screen and (max-width: 375px) {
   #slider .slider__text__bg {
     background-color: rgba(0, 0, 0, 0.5);
-    width: 55%;
-    height: 10%;
+    width: 60%;
+    height: 15%;
     position: absolute; }
     #slider .slider__text__bg .slider__text {
       text-align: center;
@@ -635,7 +635,7 @@ nav .nav-menu {
       grid-column: 2;
       grid-row: 0/2;
       position: absolute;
-      top: 1.1rem;
+      top: 2.5rem;
       right: 2rem;
       justify-self: center;
       display: block;
@@ -749,43 +749,64 @@ nav .nav-menu {
     flex-flow: row wrap; }
     #presentation .presentation__container #presentation__text,
     #presentation .presentation__container #presentation_video {
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+      justify-content: center;
       background-color: rgba(255, 255, 255, 0.1);
       border: 2px solid orangered;
       height: 48rem;
       width: 85.4rem;
       line-height: 2.5rem;
-      margin: 1rem;
-      overflow: hidden;
-      text-align: center; }
+      margin: 2rem;
+      overflow: hidden; }
+      #presentation .presentation__container #presentation__text .presentation__text--zoom,
+      #presentation .presentation__container #presentation_video .presentation__text--zoom {
+        transition: .5s;
+        font-size: 1.8rem;
+        margin: 2rem 1rem 0rem 1rem; }
       #presentation .presentation__container #presentation__text .presentation__text--zoom:hover,
       #presentation .presentation__container #presentation_video .presentation__text--zoom:hover {
         color: orangered;
         transition: .5s;
-        transform: scale(1.01); }
+        transform: scale(1.005); }
 
 @media only screen and (max-width: 768px) {
   #presentation .presentation__container #presentation__text,
   #presentation .presentation__container #presentation_video {
-    width: 80%; } }
+    width: 80%; }
+    #presentation .presentation__container #presentation__text img,
+    #presentation .presentation__container #presentation_video img {
+      display: none; } }
 
 @media only screen and (max-width: 375px) {
-  #presentation .presentation__container {
-    min-width: 100%;
-    max-width: 100%; }
-    #presentation .presentation__container #presentation__text,
-    #presentation .presentation__container #presentation_video {
-      width: 80%; } }
+  #presentation {
+    grid-template-columns: repeat(1, 100%); }
+    #presentation .presentation__container {
+      min-width: 100%;
+      max-width: 100%; }
+      #presentation .presentation__container #presentation__text,
+      #presentation .presentation__container #presentation_video {
+        width: 80%; }
+        #presentation .presentation__container #presentation__text img,
+        #presentation .presentation__container #presentation_video img {
+          display: none; } }
 
 @media only screen and (max-width: 425px) {
-  #presentation .presentation__container #presentation__text,
-  #presentation .presentation__container #presentation_video {
-    width: 80%;
-    overflow: scroll; }
-    #presentation .presentation__container #presentation__text .presentation__text--zoom:hover,
-    #presentation .presentation__container #presentation_video .presentation__text--zoom:hover {
-      color: orangered;
-      transition: .5s;
-      transform: scale(1); } }
+  #presentation {
+    grid-template-columns: repeat(1, 100%); }
+    #presentation .presentation__container #presentation__text,
+    #presentation .presentation__container #presentation_video {
+      width: 80%;
+      overflow: scroll; }
+      #presentation .presentation__container #presentation__text .presentation__text--zoom:hover,
+      #presentation .presentation__container #presentation_video .presentation__text--zoom:hover {
+        color: orangered;
+        transition: .5s;
+        transform: scale(1); }
+        #presentation .presentation__container #presentation__text .presentation__text--zoom:hover img,
+        #presentation .presentation__container #presentation_video .presentation__text--zoom:hover img {
+          display: none; } }
 
 #categories {
   display: grid;
@@ -912,6 +933,14 @@ nav .nav-menu {
     width: 30rem;
     height: 30rem;
     margin: 2rem 10rem 2rem 10rem; }
+
+@media only screen and (min-width: 700px) and (max-width: 768px) {
+  #more-vid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; }
+    #more-vid .more-vid__vid__img {
+      margin: 0; } }
 
 .wrap {
   width: 30%;

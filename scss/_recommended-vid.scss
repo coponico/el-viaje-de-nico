@@ -11,3 +11,17 @@
         }
     }
 }
+
+@media only screen and (min-width: 700px) and (max-width:768px)
+{
+    #more-vid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        .more-vid__vid {
+            &__img {
+                margin: 0;
+            }
+    }
+} 
+}
