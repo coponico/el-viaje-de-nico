@@ -957,7 +957,7 @@ nav .nav-menu {
     grid-template-columns: 1fr 1fr;
     justify-items: center; }
     #more-vid .more-vid__vid__img {
-      margin: 0; } }
+      margin: 3rem; } }
 
 .wrap {
   width: 30%;
