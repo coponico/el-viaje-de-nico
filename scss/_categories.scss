@@ -21,8 +21,7 @@
             font-family: Oswald;
             text-decoration: none;
             color: #DAF7A6;
-            background-size: cover;
-            padding: 2rem;
+            padding: 1rem;
             background-color: rgba(0, 0, 0, 0.5);
             position: absolute;
             transition: .7s;
@@ -57,6 +56,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
+        img {
+            border-radius: 20rem;
+        }
+
             
         }
     }

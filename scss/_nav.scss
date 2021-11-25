@@ -9,29 +9,40 @@ nav {
         .nav-menu__item {
 
             a {
-                color: rgb(211, 201, 201);
+                color: rgb(224, 224, 224);
                 font-family: Oswald;
                 text-decoration: none;
                 padding: 1rem;
                 margin-right: 5rem;
                 font-size: 2rem;
-                background-color: rgba(0, 0, 0, 0.1);
                 border-radius: 0.3rem;
                 transition: 0.5s;
 
                 &:hover {
                     color: orangered;
                     text-decoration: none;
+                    background-color: rgba(0, 0, 0, 0.1);
                     padding: 1rem;
                     font-size: 2rem;
                     border-bottom: 1px solid orangered;
                     transition: 0.5s;
                 }
+
+            }
+            .active {
+                color: orangered;
+                background-color: rgba(0, 0, 0, 0.1);
+                padding: 1rem;
+                font-size: 2rem;
+                border-bottom: 1px solid orangered;
             }
         }
     }
 }
-.nav-menu-hamburger { display: none;}
+
+.nav-menu-hamburger {
+    display: none;
+}
 
 @media only screen and (max-width:768px) {
     nav {

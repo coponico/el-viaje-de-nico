@@ -1,6 +1,9 @@
 
 .newsletter {
-    margin-left: 10rem;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    width: 30rem;
 
     .newsletter__text {
         font-size: 1.2rem;
@@ -24,7 +27,7 @@
 
         .newsletter__button {
             border-radius: 0rem 0.5rem 0.5rem 0rem;
-            padding: 0.8rem 1rem 1rem 1rem;
+            padding: 1rem;
             border-color: orange;
         }
     }
@@ -64,3 +67,8 @@
     }
 }
 
+@media only screen and (max-width:768px) {
+    .newsletter {
+        width: 100%;
+    }
+}

@@ -15,11 +15,12 @@
 }
 
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:768px) {
 
     #route {
         display: flex;
-        align-items: center;
+        width: 100%;
+        align-content: center;
         flex-flow: column wrap;
         color: rgb(211, 201, 201);
     
@@ -28,7 +29,6 @@
         }
     
         .route__iframe {
-            width: 35rem;
             border-radius: 0.5rem;
         }
     }

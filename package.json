@@ -1,18 +1,26 @@
 {
-  "name": "el-viaje-de-nico",
-  "version": "1.2.0",
-  "description": "Sitio web basado en un canal ficticio (no existe) de Youtube de un viajero.",
+  "name": "proyectofinal",
+  "version": "2.0.0",
+  "description": "Responsive solo en dispositivos:\r 360px\r 375px\r 425px\r 768px\r 1024px\r 1440px",
   "main": "index.js",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/prueba.scss css/prueba.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
-
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coponico/el-viaje-de-nico.git"
+  },
+  "author": "Nicolás Joli",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^6.0.1",
-    "nodemon": "^2.0.13"
-  }
+  "bugs": {
+    "url": "https://github.com/coponico/el-viaje-de-nico/issues"
+  },
+  "homepage": "https://github.com/coponico/el-viaje-de-nico#readme"
 }

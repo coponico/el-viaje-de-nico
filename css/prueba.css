@@ -49,6 +49,7 @@ p {
   font-family: 'Rubik', sans-serif; }
 
 h1 {
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   color: #59656F; }
 
 .hr {
@@ -181,22 +182,28 @@ nav .nav-menu {
   margin-right: 14rem;
   list-style: none; }
   nav .nav-menu .nav-menu__item a {
-    color: #d3c9c9;
+    color: #e0e0e0;
     font-family: Oswald;
     text-decoration: none;
     padding: 1rem;
     margin-right: 5rem;
     font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 0.3rem;
     transition: 0.5s; }
     nav .nav-menu .nav-menu__item a:hover {
       color: orangered;
       text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.1);
       padding: 1rem;
       font-size: 2rem;
       border-bottom: 1px solid orangered;
       transition: 0.5s; }
+  nav .nav-menu .nav-menu__item .active {
+    color: orangered;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    font-size: 2rem;
+    border-bottom: 1px solid orangered; }
 
 .nav-menu-hamburger {
   display: none; }
@@ -322,7 +329,10 @@ nav .nav-menu {
     border-bottom: 1px solid orangered; } }
 
 .newsletter {
-  margin-left: 10rem; }
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  width: 30rem; }
   .newsletter .newsletter__text {
     font-size: 1.2rem;
     color: white;
@@ -338,7 +348,7 @@ nav .nav-menu {
       background-color: #e0dbdb; }
   .newsletter form .newsletter__button {
     border-radius: 0rem 0.5rem 0.5rem 0rem;
-    padding: 0.8rem 1rem 1rem 1rem;
+    padding: 1rem;
     border-color: orange; }
 
 #copyright {
@@ -366,6 +376,10 @@ nav .nav-menu {
     color: lightseagreen;
     transform: scale(4);
     transition: 0.4s; }
+
+@media only screen and (max-width: 768px) {
+  .newsletter {
+    width: 100%; } }
 
 .contact-btn {
   display: flex;
@@ -826,8 +840,7 @@ nav .nav-menu {
       font-family: Oswald;
       text-decoration: none;
       color: #DAF7A6;
-      background-size: cover;
-      padding: 2rem;
+      padding: 1rem;
       background-color: rgba(0, 0, 0, 0.5);
       position: absolute;
       transition: .7s;
@@ -850,7 +863,9 @@ nav .nav-menu {
       margin: 2rem 0rem 5rem 0rem;
       display: flex;
       justify-content: center;
-      align-items: center; } }
+      align-items: center; }
+      #categories .categories__content img {
+        border-radius: 20rem; } }
 
 @media only screen and (max-width: 480px) {
   #categories {
@@ -897,22 +912,23 @@ nav .nav-menu {
   #route .route__iframe {
     border-radius: 0.5rem; }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   #route {
     display: flex;
-    align-items: center;
+    width: 100%;
+    align-content: center;
     flex-flow: column wrap;
     color: #d3c9c9; }
     #route .route__h2 {
       border-bottom: 1px solid orangered; }
     #route .route__iframe {
-      width: 35rem;
       border-radius: 0.5rem; } }
 
 /* Videos */
 #popular-video {
   display: flex;
   justify-content: center;
+  width: 100%;
   flex-wrap: nowrap; }
 
 #popular-video {
@@ -991,7 +1007,9 @@ nav .nav-menu {
   .trip-text__img {
     height: 50rem;
     width: 50rem;
-    margin-top: 2.5rem; }
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid orangered; }
   .trip-text__p {
     margin: 2rem;
     line-height: 2.4rem; }
