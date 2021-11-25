@@ -944,7 +944,8 @@ nav .nav-menu {
 #more-vid {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 8rem; }
   #more-vid .more-vid__vid__img {
     width: 30rem;
     height: 30rem;
@@ -1039,6 +1040,9 @@ nav .nav-menu {
     #merch .merch__card__body__btns {
       display: grid;
       row-gap: 0.5rem; }
+
+#merchslider .carousel .carousel-inner .carousel-item .carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.5); }
 
 @media only screen and (max-width: 425px) {
   #merch {
